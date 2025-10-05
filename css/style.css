@@ -1,0 +1,163 @@
+/* ==========================================
+            Root css Start
+========================================== */
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+:root {
+  --black: #000000;
+  --white: #ffffff;
+  --paragraph: #eeeeee;
+  --red: green;
+  --inter: "Inter", sans-serif;
+}
+/* ==========================================
+            Root css End
+========================================== */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: var(--inter);
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+/* ==========================================
+            Common css end
+========================================== */
+
+/* ==========================================
+            Navbar Star
+========================================== */
+nav {
+  background: #000000;
+  padding: 19px 0;
+}
+.main_menu {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+}
+.main_menu .menu {
+}
+.main_menu .menu ul {
+  display: flex;
+  justify-content: center;
+  gap: 8;
+}
+.main_menu .menu ul li {
+}
+.main_menu .menu ul li a {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--white);
+  line-height: 20px;
+  padding: 16px 18px;
+}
+.main_menu .buttons {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 30px;
+}
+.main_menu .buttons button {
+  width: 34px;
+  height: 34px;
+  background: transparent;
+  border: none;
+}
+.main_menu .buttons button img {
+  width: 100%;
+}
+/* ==========================================
+            Navbar End
+========================================== */
+
+/* ==========================================
+            Banner Star
+========================================== */
+#banner {
+  background: url("../images/bg-image.jpg") no-repeat center/cover;
+}
+#banner .overlay {
+  padding-top: 200px;
+  padding-bottom: 246px;
+  background: linear-gradient(
+    -270deg,
+    rgba(0, 0, 0, 0.8) 0%,
+    rgba(0, 0, 0, 0.6) 39.51%,
+    rgba(0, 0, 0, 0) 60.42%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+.banner_content {
+}
+.banner_content .content {
+  max-width: 612px;
+}
+.banner_content .content h1 {
+  color: var(--white);
+  font-size: 66px;
+  font-weight: 900;
+  line-height: 96px;
+}
+.banner_content .content h1 span {
+  display: block;
+}
+.banner_content .content p {
+  color: var(--white);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.5;
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+.banner_content .content button {
+  background: var(--white);
+  color: var(--black);
+  padding: 10px 20px;
+  border-radius: 1000px;
+  cursor: pointer;
+}
+/* ==========================================
+            Banner End
+========================================== */
+
+/* ==========================================
+            Section Star
+========================================== */
+
+/* ==========================================
+            Section End
+========================================== */
+
+/* ==========================================
+            Section Star
+========================================== */
+
+/* ==========================================
+            Section End
+========================================== */
+
+/* ==========================================
+            Footer Star
+========================================== */
+
+/* ==========================================
+            Footer End
+========================================== */
