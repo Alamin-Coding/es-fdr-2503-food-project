@@ -54,6 +54,20 @@ li {
   font-weight: 400;
   padding-top: 16px;
 }
+.button_white {
+  display: inline-block;
+  padding: 20px 54px;
+  border-radius: 1000px;
+  background: var(--white);
+  color: var(--black);
+}
+.button_black {
+  display: inline-block;
+  padding: 20px 54px;
+  border-radius: 1000px;
+  background: var(--black);
+  color: var(--white);
+}
 /* ==========================================
             Common css end
 ========================================== */
@@ -71,15 +85,13 @@ nav {
   gap: 20px;
   align-items: center;
 }
-.main_menu .menu {
-}
+
 .main_menu .menu ul {
   display: flex;
   justify-content: center;
   gap: 8;
 }
-.main_menu .menu ul li {
-}
+
 .main_menu .menu ul li a {
   font-size: 18px;
   font-weight: 600;
@@ -123,8 +135,7 @@ nav {
     rgba(0, 0, 0, 0) 100%
   );
 }
-.banner_content {
-}
+
 .banner_content .content {
   max-width: 612px;
 }
@@ -257,8 +268,7 @@ nav {
   gap: 30px;
   align-items: center;
 }
-.delicious_menu ul li {
-}
+
 .delicious_menu ul li button {
   background: transparent;
   border: none;
@@ -302,8 +312,7 @@ nav {
 .menus_grid .card_item .image img {
   width: 100%;
 }
-.menus_grid .card_item .text {
-}
+
 .menus_grid .card_item .text h3 {
   color: var(--white);
   font-size: 24px;
@@ -343,41 +352,255 @@ nav {
   border: 1px solid var(--white);
   border-radius: 50%;
 }
-.menus_grid .card_item .text .price_and_cart button img {
-}
+
 
 .see_all {
   display: flex;
   justify-content: center;
   margin-top: 80px;
 }
-.see_all a {
-  display: inline-block;
-  padding: 20px 54px;
-  border-radius: 1000px;
-  background: var(--white);
-  color: var(--black);
-}
 
-#food_quality {
-  padding-top: 150px;
-  background: var(--black);
-}
-.food_quality {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
-}
 /* ==========================================
            Delicious Menu Section End
 ========================================== */
 
 /* ==========================================
-            Section Star
+          Food Quality  Section Star
+========================================== */
+
+#food_quality {
+  padding-top: 150px;
+  background: var(--black);
+}
+#food_quality .section_header h2 {
+  font-size: 44px;
+}
+.food_quality {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  padding-top: 60px;
+  padding-bottom: 30px;
+}
+
+.food_quality .item h4 {
+  color: var(--white);
+  font-size: 56px;
+  line-height: 1.5;
+  padding-bottom: 15px;
+  font-weight: 700;
+}
+.food_quality .item p {
+  color: var(--white);
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: 400;
+}
+/* ==========================================
+           Food Quality Section End
 ========================================== */
 
 /* ==========================================
-            Section End
+           Food Quality Section Start
+========================================== */
+#franchisee {
+  padding-top: 150px;
+  padding-bottom: 100px;
+  background: var(--black);
+}
+
+.information {
+  text-align: center;
+}
+.information p {
+  color: var(--white);
+  line-height: 1.5;
+  font-size: 20px;
+  padding-top: 20px;
+  padding-bottom: 60px;
+}
+/* ==========================================
+           Food Quality Section End
+========================================== */
+
+/* ==========================================
+           Testimonial Section Start
+========================================== */
+#testimonial {
+  padding-top: 150px;
+  padding-bottom: 150px;
+  background: var(--black);
+}
+
+.testimonial_content {
+  padding-top: 70px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+.testimonial_content .testimonial_item {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background: #191919;
+  border-radius: 16px;
+}
+.testimonial_content .testimonial_item .user_info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.testimonial_content .testimonial_item .user_info .user {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.testimonial_content .testimonial_item .user_info .user .avatar {
+  width: 74px;
+  height: 74px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.testimonial_content .testimonial_item .user_info .user .avatar img {
+  width: 100%;
+}
+
+
+.testimonial_content .testimonial_item .user_info .user .user_details h4 {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--white);
+  line-height: 1.5;
+}
+.testimonial_content .testimonial_item .user_info .user .user_details p {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--white);
+  padding-bottom: 8px;
+  line-height: 1.5;
+}
+.testimonial_content .testimonial_item .user_info .user .user_details ul {
+  display: flex;
+  gap: 3px;
+  align-items: center;
+}
+
+
+.testimonial_content .testimonial_item .user_info .quote {
+  position: relative;
+}
+.testimonial_content .testimonial_item .user_info .quote::after {
+  content: "";
+  position: absolute;
+  left: 22px;
+  bottom: 10px;
+  width: 95px;
+  height: 1px;
+  background: var(--white);
+}
+
+
+.testimonial_content .testimonial_item .text p {
+  color: var(--white);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.line_height {
+  margin: 100px;
+  color: #000000;
+  background: #fff;
+  font-size: 60px;
+  line-height: 1.5;
+}
+/* ==========================================
+           Testimonial Section End
+========================================== */
+
+/* ==========================================
+           Support Section Start
+========================================== */
+#support {
+  background: var(--white);
+  padding: 80px 0;
+}
+.support h2 {
+  font-size: 50px;
+  color: var(--black);
+  font-weight: 700;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.support_form {
+  padding-top: 50px;
+}
+.support_form form {
+  max-width: 748px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 20px;
+}
+.support_form form input {
+  background: transparent;
+  border: 1px solid var(--black);
+  border-radius: 1000px;
+  padding: 15px;
+  color: red;
+  font-size: 20px;
+  /* outline: none; */
+}
+.support_form form input::placeholder {
+  color: var(--black);
+}
+.support_form form input:focus {
+  border: 1px solid rgb(18, 179, 23);
+  outline: none;
+}
+
+/* ==========================================
+           Support Section End
+========================================== */
+
+/* ==========================================
+           Map Section Start
+========================================== */
+#map {
+  background: var(--black);
+  padding: 150px 0;
+}
+.map_container {
+  display: flex;
+  align-items: center;
+  gap: 145px;
+}
+
+.map_container .text h2 {
+  color: var(--white);
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+.map_container .text p {
+  color: var(--white);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.map_container .map iframe {
+  border-radius: 12px;
+}
+/* ==========================================
+           Map Section End
 ========================================== */
 
 /* ==========================================
